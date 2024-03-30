@@ -1,8 +1,13 @@
 
-import java.io.*;
-import java.util.*;
 
-public class MLQ {
+import java.util.*;
+import java.io.*;
+
+
+//public class MultilevelQueueScheduler  {
+	
+
+public class MultilevelQueueScheduler {
 
 	public static void main(String[] args) {
 
@@ -84,9 +89,9 @@ public class MLQ {
                      
 			            for (int i = 0; i < Q2.size(); i++) {
 			                PCB process = Q2.get(i);
-			                 System.out.println( process.getProcessID() + "|")
+			                 System.out.println( process.getProcessID() + "|") ;
 			            }//NEW
-			        }
+			        
 
 			          System.out.println( " ]") ;
 
@@ -116,10 +121,11 @@ public class MLQ {
                case 3:
                     System.out.println("Exiting the program.");
                     break;
-			}
-		} while (choice != 3);
-
-	}
+			}// DO
+                }   while (choice != 3);//WHILE
+        
+                }//MAIN 
+	
 
 	public static void displayAverage(List<PCB> Q1, List<PCB> Q2) {
 
@@ -290,5 +296,9 @@ public class MLQ {
 		}
 	}
 	
+
+}
+
+
 
 }
